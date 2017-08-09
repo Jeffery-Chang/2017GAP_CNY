@@ -1,0 +1,11 @@
+$box_w: 100%;
+$box_h: auto;
+@mixin box-size($box_w,
+$box_h) {
+    width: $box_w;
+    height: $box_h;
+}
+%all-100 {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,30 @@
+// font style
+// font style
+// font size
+$ss_font: 1.2rem;
+$s_font: 1.3rem;
+$m_font: 1.4rem;
+$l_font: 1.6rem;
+$tt_s_font: 1.5rem;
+$tt_m_font: 2rem;
+$tt_font: 5.5rem;
+
+
+%fw_l {
+    font-weight: 200;
+}
+
+%fw_n {
+    font-weight: 300;
+}
+
+%fw_r {
+    font-weight: 400;
+}
+
+%fw_m {
+    font-weight: 600;
+}
+%fw_b {
+    font-weight: 700;
+}

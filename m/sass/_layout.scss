@@ -1,0 +1,569 @@
+// for whole width & height
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: $bg_red;
+    min-width: 314px;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+header a.logo {
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    padding-top: 20px;
+    @media screen and (max-width: 374px) {
+        width: 50px;
+    }
+}
+
+a img {
+    width: 100%;
+}
+
+.menubox {
+    width: 100%;
+    height: 100%;
+    background-color: $bg_red;
+    z-index: 1;
+    text-align: center;
+    position: fixed;
+    // flex-direction: column;
+    //  justify-content: center;
+    top: 0;
+    display: none;
+    padding-top: 40%;
+    /*=========================================== iPad 直 ===========================================*/
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        padding-top: 30%;
+    }
+    button {
+        color: white;
+        margin: 50px;
+        display: block;
+        font-size: 1.2rem;
+        background-color: $bg_red;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        border-style: none;
+        font-weight: 400;
+        /*=========================================== iPad 直 ===========================================*/
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+body.wrap,
+.main {
+    @extend %all-100;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 75%;
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        margin-bottom: 55%;
+    }
+    // iphone6+
+    @media screen and (min-width: 414px) and (max-width: 959px) {
+        margin-bottom: 75%;
+    }
+    .upupup {
+        width: 17%;
+        margin: 0 auto;
+        margin-top: 5%;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    a.start {
+        border: solid 1px;
+        border-color: $gigi_gold;
+        border-radius: 5px;
+        padding: 10px 30px 10px 30px;
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+        // iphone5
+        @media screen and (max-width: 374px) {
+            width: 80px;
+            margin-top: 20px
+        }
+    }
+}
+
+.main {
+    background: url(../img/KV_gigi.png) no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 80%;
+    // position: relative;
+}
+
+.part1 {
+    display: block;
+}
+
+.part2 {
+    display: none;
+    background-color: black;
+    @extend %all-100;
+    z-index: 5;
+    text-align: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+    ul.howtoplay {
+        display: block;
+        opacity: 1;
+        margin: 0 auto;
+        z-index: 6;
+        position: absolute;
+        width: 100%;
+        color: white;
+        line-height: 1.8rem;
+        padding-top: 30%;
+        // iphone5
+        @media screen and (max-width: 374px) {
+            padding-top: 20%;
+        }
+        li {
+            img {
+                width: 120px;
+            }
+            a {
+                color: white;
+                border: solid 1px;
+                padding: 10px 30px 10px 30px;
+                line-height: 5rem;
+                border-radius: 5px;
+                @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+                    padding: 10px 45px 10px 45px;
+                }
+            }
+        }
+    }
+}
+
+.part3 {
+    overflow: hidden;
+    // J加的
+    // display: none;
+    background-color: black;
+    @extend %all-100;
+    z-index: 5;
+    text-align: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    .couplet {
+        border: solid $gigi_gold;
+        border-width: 25px 4px 25px 4px;
+        width: 65%;
+        height: 75%;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 35px;
+        background-color: $bg_red;
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+            width: 50%;
+            height: 70%;
+        }
+        .outside {
+            width: 100%;
+            height: 100%;
+            background: url(../img/couplet_gigi.png) no-repeat;
+            background-position: bottom;
+            background-size: contain;
+            ul {
+                display: block;
+                width: 60%;
+                margin: 0 auto;
+                color: $gigi_gold;
+                line-height: 1.4rem;
+                padding-top: 40px;
+                @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+                    padding-top: 80px;
+                    line-height: 2rem;
+                }
+                button {
+                    color: $gigi_gold;
+                    border: solid 1px;
+                    border-radius: 5px;
+                    background-color: $bg-red;
+                    width: 100%;
+                    padding: 10px 10px;
+                    font-size: 1rem;
+                    margin-top: 15px;
+                }
+                li.left {
+                    text-align: left;
+                }
+                .got {
+                    img {
+                        width: 60%;
+                    }
+                }
+                .number {
+                    img {
+                        width: 85%;
+                    }
+                    img.doll {
+                        width: 10%;
+                    }
+                }
+                li.right {
+                    text-align: right;
+                    img {
+                        width: 40%;
+                    }
+                }
+                li.happy img {
+                    width: 100%;
+                }
+            }
+        }
+        .lantern {
+            position: absolute;
+            left: 32.5%;
+            z-index: -1;
+            top: 90px;
+            img {
+                width: 100%;
+            }
+            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+                left: 40%;
+                top: 80px;
+            }
+        }
+        .line {
+            width: 2px;
+            height: 300px;
+            background-color: $gigi_gold;
+            position: absolute;
+            left: 50%;
+            top: -300px;
+        }
+        .circle {
+            position: absolute;
+            border: solid 4px $gigi_gold;
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+        }
+        .a {
+            top: -25px;
+            left: -17px;
+        }
+        .b {
+            top: -25px;
+            right: -17px;
+        }
+        .c {
+            bottom: -25px;
+            left: -17px;
+        }
+        .d {
+            bottom: -25px;
+            right: -17px;
+        }
+    }
+}
+
+// 門市資訊
+.store {
+    padding-top: 80px;
+    text-align: center;
+    line-height: 1.6rem;
+    h1 {
+        color: $gigi_gold;
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+    h2 {
+        color: $gigi_gold;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        line-height: 50px;
+    }
+    ul.tab {
+        margin-top: 15px;
+        li {
+            display: inline-block;
+            position: relative;
+            margin-right: 40px;
+            margin-left: 40px;
+            // iphone5
+            @media screen and (max-width: 374px) {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            a {
+                color: $gigi_gold;
+                font-size: 1.2rem;
+            }
+            span {
+                background-color: $gigi_gold;
+                width: 40px;
+                height: 2px;
+                display: block;
+                position: absolute;
+                left: 60px;
+                top: 11px;
+                // iphone5
+                @media screen and (max-width: 374px) {
+                    width: 30px;
+                    left: 45px;
+                    top: 10px;
+                    height: 2px;
+                }
+            }
+        }
+    }
+    .store_block {
+        padding-top: 20px;
+        p {
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: #0f0c36;
+            line-height: 40px;
+            letter-spacing: 4px;
+        }
+        span {
+            font-size: 1rem;
+            line-height: 0.8rem;
+            color: $gigi_gold;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.menubox.active {
+    display: block;
+}
+
+.rule {
+    padding-top: 80px;
+    text-align: center;
+    line-height: 1.6rem;
+    h1 {
+        color: #0f0c36;
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+    h2 {
+        color: #0f0c36;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        line-height: 50px;
+    }
+    .content {
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 20px;
+        h3 {
+            color: #0f0c36;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            line-height: 35px;
+        }
+        p {
+            color: $gigi_gold;
+            letter-spacing: 2px;
+            span.gray {
+                font-size: 0.8rem;
+                display: inline-block;
+                margin-top: 15px;
+            }
+        }
+        .about {
+            padding-top: 20px;
+            text-align: left;
+            ul {
+                list-style: decimal;
+                color: $gigi_gold;
+                // list-style-position: inside;
+                text-justify: inter-ideograph;
+                margin-left: 20px;
+                text-align: justify;
+                li {
+                    list-style-position: outside;
+                }
+            }
+        }
+    }
+}
+
+.turn {
+    background-color: $bg_red;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 250;
+    section {
+        text-align: center;
+        h1 {
+            width: 80%;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            color: $gigi_gold;
+            margin-top: 20px;
+            line-height: 1.8rem;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.turn section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.coupon {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.barcode {
+    height: 25%;
+    width: 50%;
+    background-color: $bg_red;
+    position: absolute;
+    bottom: 14%;
+    left: 12%;
+    border: 2px solid $bg_red;
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        height: 20%;
+        width: 29%;
+        left: 29%;
+        bottom: 14%;
+        left: 27%;
+    }
+}
+
+.txt {
+    width: 100%;
+    color: $gigi_blue;
+    font-size: 0.8rem;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    /*=========================================== iPad 直 ===========================================*/
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        width: 60%;
+        padding-bottom: 50%;
+    }
+    margin: 0 auto;
+    p {
+        line-height: 1.3rem;
+        letter-spacing: 2px;
+        display: block;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+// .coupon{img{
+// }}
+.loading {
+    @mixin all-100 {
+        position: relative;
+        font-size: 0;
+        width: 100%;
+        height: 100%;
+        background: $bg_red;
+        z-index: 999;
+    }
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    // display: none;
+    background-color: $bg_red;
+}
+
+.jumper img {
+    width: 80px;
+    height: auto;
+}
+
+.jumper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+    .cloud {
+        .gi {
+            position: absolute;
+            top: -70px;
+            left: -16px;
+            @include transition(.8s);
+            .gigibody {
+                position: relative;
+                z-index: 0;
+                .ass {
+                    width: 38px;
+                    height: 38px;
+                    background-color: $gigi_blue;
+                    border-radius: 100%;
+                    position: absolute;
+                    top: 35px;
+                    left: 39px;
+                    z-index: -1;
+                    @include transition(.8s);
+                    @include animation(ass .8s infinite ease);                   
+                }
+            }
+        }
+        position: relative;
+    }
+}
+
+.gi {
+    @include animation(slidein .8s infinite ease);
+}
+
+
+// .ass {
+//     animation-duration: 1s;
+//     animation-name: hahaha;
+//     animation-iteration-count: infinite;
+// }
+// @keyframes hahaha {
+//     from {
+//         width: 38px;
+//          height: 35px;
+//     }
+//     to {
+//         width: 38px;
+//         height: 38px;
+//     }
+// }

@@ -1,0 +1,177 @@
+// reset
+@import "compass/reset";
+@import "compass/css3";
+$theme-color: #f40000;
+
+// 100
+@mixin all-100 {
+    position: relative;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    background:$bg_red;
+}
+// mid
+@mixin pos-mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+}
+.trans_bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+.trans_ipad {
+    display: none;
+}
+
+.trans_iphone {
+    display: none;
+}
+
+// only for ipad in portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .trans_bg{
+        display: block;
+    }
+    .trans_ipad {
+        display: block;
+        @include all-100;
+        position: absolute;
+        background-color: $bg_red;
+        
+        .trans_center {
+            @include pos-mid;
+            text-align: center;
+            img {
+                width: 60%;
+            }
+            p {
+                text-align: center;
+               font-size: 1rem;
+                font-spacing: 2px;
+          
+                color:$gigi_gold;
+                
+                line-height: 1.3;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+// only for iphone4 in landscape
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+    .trans_bg{
+        display: block;
+    }
+    .trans_iphone {
+        display: block;
+        @include all-100;
+        position: absolute;
+        background-color:$bg_red;
+        .trans_center {
+            @include pos-mid;
+            text-align: center;
+            img {
+                width: 35%;
+            }
+            p {
+                text-align: center;
+               font-size: 1rem;
+                color:$gigi_gold;
+                line-height: 1.3;
+                    margin-top: 20px;
+            }
+        }
+    }
+}
+
+// only for iphone5 in landscape
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+    .trans_bg{
+        display: block;
+    }
+    .trans_iphone {
+        display: block;
+        @include all-100;
+        position: absolute;
+        background-color:$bg_red;
+        .trans_center {
+            @include pos-mid;
+            text-align: center;
+            img {
+                width: 40%;
+            }
+            p {
+                text-align: center;
+                font-size: 1rem;
+          
+                color:$gigi_gold;
+                line-height: 1.3;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+// only for iphone6 in landscape
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+    .trans_bg{
+        display: block;
+    }
+    .trans_iphone {
+        display: block;
+        @include all-100;
+        position: absolute;
+        background-color:$bg_red;
+        .trans_center {
+            @include pos-mid;
+            text-align: center;
+            img {
+                width: 45%;
+            }
+            p {
+                text-align: center;
+                font-size: 1rem;
+                font-spacing: 2px;
+          
+                color:$gigi_gold;
+                line-height: 1.3;
+            }
+        }
+    }
+}
+
+// only for iphone6+ in landscape
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+    .trans_bg{
+        display: block;
+    }
+    .trans_iphone {
+        display: block;
+        @include all-100;
+        position: absolute;
+        background-color:$bg_red;
+        .trans_center {
+            @include pos-mid;
+            text-align: center;
+            img {
+                width: 45%;
+            }
+            p {
+                text-align: center;
+                font-size: 1rem;
+             
+                color:$gigi_gold;
+                line-height: 1.3;
+            }
+        }
+    }
+}

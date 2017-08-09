@@ -1,0 +1,314 @@
+// for whole width & height
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: $bg_red;
+    min-width: 314px;
+}
+
+body {
+    font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif, '微軟正黑體';
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    color: #333;
+    font-weight: 500;
+}
+
+nav#top-bar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    ul {
+        padding-top: 10px;
+        text-align: right;
+        li {
+            display: inline-block;
+            margin: 0 30px;
+            a {
+                color: $gigi_gold;
+                font-weight: 500;
+                position: relative;
+                span {
+                    position: absolute;
+                    top: -3px;
+                    left: -27px;
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 5px;
+                }
+                span.home {
+                    background: url(../img/icon_home.png) no-repeat;
+                    top: -2px;
+                    left: -28px;
+                }
+                span.how {
+                    background: url(../img/icon_Q.png) no-repeat;
+                    top: -2px;
+                    left: -28px;
+                }
+                span.location {
+                    background: url(../img/icon_location.png) no-repeat;
+                }
+                span.rule {
+                    background: url(../img/icon_rule.png) no-repeat;
+                }
+            }
+        }
+    }
+}
+
+.wrap,
+.kv {
+    min-width: 1000px;
+    width: 100%;
+    position: relative;
+}
+
+section {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    .gigi {
+        background: url(../img/KV.png) no-repeat;
+        background-position: right bottom;
+        height: 650px;
+    }
+    .QRcode {
+        position: absolute;
+        top: -25%;
+        left: 6%;
+        text-align: center;
+        color: $gigi_gold;
+        line-height: 1.3rem;
+        letter-spacing: 1.5px;
+        img {
+            width: 62%;
+            margin-bottom: 15px;
+        }
+    }
+    .title {
+        position: absolute;
+        top: 12%;
+        left: 33%;
+        img {
+            width: 100px;
+        }
+    }
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 60px;
+
+}
+
+h2 {
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.step_block {
+    background-color: $gigi_blue;
+    text-align: center;
+    color: white;
+    section {
+        padding-bottom: 40px;
+        h1,
+        h2 {
+            color: $gigi_gold;
+            line-height: 2.5rem;
+        }
+        ul {
+            margin-top: 30px;
+            li {
+                width: 215px;
+                height: 215px;
+                display: inline-block;
+                margin: 0 20px;
+                vertical-align: middle;
+                position: relative;
+                p {
+                    letter-spacing: 3px;
+                    line-height: 4rem;
+                }
+            }
+            .dot {
+                width: 5px;
+                height: 5px;
+                background-color: white;
+                display: inline-block;
+                border-radius: 100%;
+            }
+        }
+    }
+}
+
+.activity {
+    background-color: white;
+    section {
+        h1,
+        h2 {
+            color: $gigi_blue;
+            line-height: 2.5rem;
+            text-align: center;
+        }
+        padding: 50px 0;
+        background-color: white;
+        article {
+            line-height: 1.8;
+            h1 {
+                font-size: 17px;
+                font-weight: 700;
+                color: #333;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.activity article .part .topic,
+.activity article .part .con {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+}
+
+.activity article .part .topic {
+    text-align: right;
+    width: 20%;
+    padding-right: 20px;
+    color: $bg_red;
+    font-weight: 900;
+}
+
+.activity article .part .con {
+    width: 70%;
+    span {
+        display: block;
+        font-weight: 400;
+        font-size: 13px;
+        color: #666;
+    }
+}
+
+.activity article ul.con {
+    margin-left: 25px;
+    li {
+        list-style: decimal;
+        text-align: justify;
+        text-justify: inter-ideograph;
+        word-wrap: break-word;
+        a {
+            color: #333;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+.activity article .part {
+    font-size: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+// store
+.store section {
+  padding: 50px 0;
+}
+
+.store {
+  background-color: #333;
+  text-align: center;
+}
+.store h1,
+.store h2 {
+  color: white;
+}
+.store .s_list {
+  color: white;
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  margin: 40px 30px;
+}
+.store .s_list p {
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.store .s_list ul li {
+  margin: 10px 0;
+}
+.store .s_list ul li a {
+  color: white;
+  font-weight: 400;
+  display: block;
+  position: relative;
+}
+.store .s_list ul li a span {
+  opacity: 0;
+  display: block;
+  width: 6px;
+  height: 9px;
+  background: url(../asset/svg/arrow_2.svg) no-repeat center center;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.store .s_list ul li a:hover span {
+  opacity: 1;
+}
+.store .s_list ul li a.focus {
+  cursor: default;
+}
+.store .s_list ul li a.focus span {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+.store .map {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+}
+a.gotop {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: $gigi_blue;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+a.gotop span {
+  width: 25px;
+  height: 7px;
+  background-color: white;
+  display: block;
+}
+a.gotop span:nth-of-type(1) {
+  transform: translateX(30px) translateY(30px) rotate(45deg);
+}
+a.gotop span:nth-of-type(2) {
+  transform: translateX(16px) translateY(23px) rotate(-45deg);
+}
+
+

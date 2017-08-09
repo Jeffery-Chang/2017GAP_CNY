@@ -1,0 +1,32 @@
+/*
+Error: Invalid CSS after ".": expected "{", was ""
+        on line 1 of _coupon.scss
+
+1: .
+
+Backtrace:
+_coupon.scss:1
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/scss/parser.rb:1179:in `expected'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/scss/parser.rb:1115:in `expected'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/scss/parser.rb:1110:in `tok!'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/scss/parser.rb:655:in `block'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/scss/parser.rb:649:in `ruleset'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/scss/parser.rb:674:in `block_child'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/scss/parser.rb:664:in `block_contents'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/scss/parser.rb:126:in `stylesheet'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/scss/parser.rb:42:in `parse'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/engine.rb:403:in `_to_tree'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:412:in `run'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.20/bin/sass:13:in `<top (required)>'
+/Applications/Prepros.app/Contents/Resources/app/ruby/loader.rb:15:in `load'
+/Applications/Prepros.app/Contents/Resources/app/ruby/loader.rb:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \".\": expected \"{\", was \"\"\A         on line 1 of _coupon.scss\A \A 1: ."; }
